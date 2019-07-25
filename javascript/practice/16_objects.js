@@ -14,6 +14,8 @@ function Person(name,age){
     this.name = name;
     this.age = age;
 }
+
+
 var obj2 = new Person("sagar",24);
 console.log(obj2);
 
@@ -22,3 +24,4 @@ var obj3 = {name:"sagar",age:24};
 var obj4 = Object.create(obj3);
 
 console.log(obj4);
+alert(“Hello”);
