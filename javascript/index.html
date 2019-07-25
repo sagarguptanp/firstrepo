@@ -1,0 +1,104 @@
+<html>
+    <!-- how we can include js in html page -->
+    <!-- Type 1  -->
+    <!-- we can write anywhere inside html in between script tag -->
+    <script>
+      //  alert("Js included");
+    </script>
+
+    <!-- Type 2 -->
+    <!-- by including external files in html page -->
+    <!--<script src="example1.js"></script>-->
+
+    <!-- Type 3 -->
+    <script src="https://www.w3schools.com/js/myScript1.js"></script>
+
+
+    <!--  How we can display data in scripting language -->
+    <script>
+        document.write("using document.write");
+        alert("using alert"); // its substitute (window.alert("another type of alert");
+        console.log("using console.log");
+        //using innerHTML(); 
+        // in innerHTML we can pass data which will write on html tag on which this function called
+    </script>
+
+    <!-- Variable declaration and intialization -->
+    <script>
+        var a = 10 , b = 20 ;  //here a and b are variable names.
+        var c = a + b ; // assign sum of a and b into c
+        console.log(c);
+
+        // variable name should not be same as predefined keyword.
+        // if we use predefined keyword so we will get error
+        //var if;
+        // variable should not start from number 
+        //var 34;
+        // we can declare variable multiple time but its values will
+        // be retained.
+        var multipleVariableDeclaration = "first time declaration";
+        var multipleVariableDeclaration;
+        console.log(multipleVariableDeclaration);
+    </script>
+
+    <!-- Data Type -->
+    <!-- their is only one way to declare primitive datatype like Number,String .. and so on-->
+    <!-- use var keyword -->
+    
+    
+    <!-- Arrays -->
+    <!-- we can declare array like var cars = ["Saab", "Volvo", "BMW"]; -->
+    <!-- we can also create and Object in javascript -->
+    <script>
+        //var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        //console.log(person);
+    </script>
+
+    <!-- typeof operator in js -->
+    <!-- this operator is used to get type of variable -->
+    <script>
+        console.log(typeof "sagar");
+        console.log(typeof 3);
+        console.log(typeof 3.14);
+        console.log(typeof true);
+
+        var emptyObject;
+        console.log("type of empty object:- " + typeof emptyObject);
+        console.log("typeof null:- " + typeof null);
+        console.log(null);
+        console.log(typeof function myFunc(){});   // Returns "function"
+    </script>
+
+    <!-- objects can also have methods -->
+    <script>
+        var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+         }
+        };
+
+        console.log(person);
+        /*
+            if we call person.fullName so it will return function complete body 
+            eg 
+            console.log(person.fullName);
+            if we call using paranthesis so we will get the response of the function
+            eg.
+            console.log(person.fullName());
+        */
+    </script>
+
+    <!-- Escape Characters -->
+    <script>
+        console.log("testing for escape character   \f  s");
+    </script>
+
+    <!-- String predefined function -->
+    <script></script>
+
+
+
+</html>
